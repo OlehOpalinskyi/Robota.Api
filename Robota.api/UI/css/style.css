@@ -1,0 +1,58 @@
+body{
+    padding-left: 40px;
+    padding-left: 40px;
+}
+
+header {
+    background: url(../img/header.jpg) no-repeat;
+    background-size: contain;
+    height: 241px;
+    background-position-x: 50%;
+}
+
+.category {
+    margin-top:40px; 
+    font-weight:bold;
+    font-size: 16px;
+}
+.myCategory {
+    cursor:pointer;
+    color:cornflowerblue;
+}
+#person input .incorrect {
+    border-color:red !important;
+}
+
+@media screen and (max-width: 400px) {
+    header {
+    background: url(../img/header.jpg) no-repeat;
+    background-size: contain;
+    height: 70px;
+    background-position-x: 50%;
+    }
+}
+
+@media (min-width:400px) and (max-width: 700px) {
+    header {
+    background: url(../img/header.jpg) no-repeat;
+    background-size: contain;
+    height: 100px;
+    background-position-x: 50%;
+    }
+}
+
+#myInput {
+    background-image: url(../img/searchicon.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+.border-filter {
+    border: 1px dotted black;
+    padding: 6px;
+}

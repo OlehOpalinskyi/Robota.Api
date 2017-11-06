@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Pomoc-people</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen"> 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+    
+
+<body>
+    <header></header>
+    <div class="row">
+        <div class="col-md-8 col-sm-12 col-xs-12 category"> 
+           <div class="row" id="categories">
+           </div>
+          
+        
+    <form class="form-inline text-center" style="margin-top:50px;">
+        Додати нову категорію
+          <div class="form-group mx-sm-3">
+            <label for="inputPassword2" class="sr-only">Категорія</label>
+            <input type="text" class="form-control" placeholder="Назва" id="categoryName">
+          </div>
+          <button type="button" class="btn btn-success" id="addCategory">Додати</button>
+    </form>
+                    
+              
+        </div>
+        <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="row">
+                <h4>Додати нову людину</h4>
+                <form style="width:100%" id="person">
+                    <div class="input-group col-md-12"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" name="fullName" placeholder="Прізвище Ім'я Побатькові"> </div>
+                    <br />
+                    <div class="input-group col-md-12"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                        <input type="text" class="form-control" id="phone" name="phoneNumber" placeholder="Телефон"> </div>
+                    <br />
+                    <div class="input-group col-md-12"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input type="text" class="form-control" name="email" placeholder="Email"> </div>
+                    <br />
+                    <div class="input-group col-md-12"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <input type="text" class="form-control" name="address" placeholder="Адреса"> </div>
+                    <br />
+                    <div class="input-group col-md-12"> <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                        <input type="text" class="form-control" id="age" name="age" placeholder="Вік"> </div>
+                    <br />
+                    <div class="form-group">
+                          <p>Стать:</p>
+                          <div>
+                            <input type="radio" id="contactChoice1" checked name="sex" value="1">
+                            <label for="contactChoice1">Чол</label>
+
+                            <input type="radio" id="contactChoice2" name="sex" value="2">
+                            <label for="contactChoice2">Жін</label>
+                          </div>   
+                    </div>
+                    <div class="form-group">
+                        <label class="сol-md-2 control-label">Спеціальність</label>
+                        <select id="category" name="categoryId"></select>
+                    </div>
+                   
+                    
+                   
+                    <hr />
+                    <div class="text-center">
+                        <button type="button" id="addUser" class="btn btn-success btn-lg">Додати нову людину</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/CategoryModule.js"></script>
+    <script src="js/PersonModule.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

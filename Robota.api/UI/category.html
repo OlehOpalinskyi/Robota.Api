@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Pomoc-people</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+    
+
+<body>
+    <header></header>
+	<a href="index.html"><span class="glyphicon glyphicon-home"></span> Назад на головне меню</a>
+	<h1 class="text-center" id="title"></h1>
+    <div class="row">
+       <input type="text" id="myInput" placeholder="Пошук по ПІП..." title="Пошук">
+		   <br />
+		   <strong id="count">Кількість осіб: </strong>
+		   <hr />
+        <div class="col-md-3 col-sm-12 col-xs-12 text-center border-filter">
+            <h4>Фільтр</h4> 
+            <form id="filter">
+                <div class="form-group">
+                    <div>
+                        Стать:
+                        <input type="radio" id="contactChoice1" name="sex" checked value="1">
+                        <label for="contactChoice1">Чол</label>
+
+                        <input type="radio" id="contactChoice2" name="sex" value="2">
+                        <label for="contactChoice2">Жін</label>
+                    </div>
+                </div>
+                <div class="price-controls">
+                    Від <input class="min-price" type="text" name="minAge" style="width:30%">
+                    &nbsp; До <input class="max-price" type="text" name="maxAge" style="width:30%">
+                </div>
+                <br />
+                <button type="button" id="btnFilter" class="btn-success">Фільтрувати</button>
+            </form>           
+        </div>
+        <div class="col-md-9 col-sm-12 col-xs-12"> 
+           
+		   <div class="table-responsive">
+                            <table id="mytable" class="table table-bordred table-striped">
+                                <thead>  
+                                    <tr>
+                                    <th>№</th>
+                                    <th>ПІП</th>
+									<th>Адреса</th>
+                                    <th>Телефон</th>
+                                    <th>Email</th>
+                                    <th>Стать</th> 
+                                    <th>Вік</th>                               
+                                    <th>Змінити</th>
+                                    <th>Видалити</th>
+                                </tr></thead>
+                                <tbody id="table">
+                                </tbody>
+                            </table>
+                            <div class="clearfix"></div>
+
+                        </div>
+        </div>
+        
+
+    </div>
+	
+	
+	<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" id="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                            <h4 class="modal-title custom_align" id="Heading">Змінити дані</h4> </div>
+                        <div class="modal-body">
+                            <form id="person">
+                                <div class="form-group">
+                                    <input class="form-control" name="fullName" type="text" placeholder="ПІП">
+                                    <br />
+                                    <input class="form-control" name="address" type="text" placeholder="Адреса">
+                                    <br />
+                                    <input class="form-control" name="phoneNumber" type="text" placeholder="Телефон">
+                                    <br />
+                                    <input class="form-control" name="email" type="text" placeholder="Email">
+                                    <br />
+                                    <input class="form-control" name="age" type="text" placeholder="Вік">
+                                    <br />
+                                    <button type="button" id="editUser" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Зберегти</button>
+                                </div> 
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+	
+	
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/PersonModule.js"></script>
+    <script src="js/Category.js"></script>
+
+</body>
+
+</html>
